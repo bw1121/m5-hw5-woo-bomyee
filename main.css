@@ -23,6 +23,11 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    padding-bottom: 1rem;
+    color: #16dfff;
+}
+
 /* Boxes */
 .boxes {
     align-items: center;
