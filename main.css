@@ -53,6 +53,10 @@ h2 {
     background-color: #a5ff01;
 }
 
+.color-change {
+    background-color: #16dfff;
+}
+
 @media (min-width: 768px) {
     .boxes {
         flex-direction: row !important;
