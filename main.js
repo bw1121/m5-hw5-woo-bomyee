@@ -5,12 +5,13 @@ function changeColor() {
     for (i=0; i < numberBox.length; i++) {
         numberBox[i].classList.toggle('color-change');
     }
-};
+}
 
 for (i = 0; i < numberBox.length; i++) {
     numberBox[i].addEventListener('mouseenter', changeColor);
     numberBox[i].addEventListener('mouseleave', changeColor);
 }
+
 
 //Box click and message appears
 //create element
@@ -26,22 +27,24 @@ var text3 = document.createTextNode('Oops, better luck next time');
 function box1Message() {
     addText.appendChild(text1);
     document.querySelector('.text').appendChild(addText);
-};
+}
+
+numberBox[0].addEventListener('click', box1Message);
 
 //box 2 click
 function box2Message() {
     addText.appendChild(text2);
     document.querySelector('.text').appendChild(addText);
-};
+}
+
+numberBox[1].addEventListener('click', box2Message);
 
 //box 3 click
 function box3Message() {
     addText.appendChild(text3);
     document.querySelector('.text').appendChild(addText);
-};
+}
 
-numberBox[0].addEventListener('click', box1Message);
-numberBox[1].addEventListener('click', box2Message);
 numberBox[2].addEventListener('click', box3Message);
 
 
