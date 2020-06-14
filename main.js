@@ -43,3 +43,15 @@ function box3Message() {
 numberBox[0].addEventListener('click', box1Message);
 numberBox[1].addEventListener('click', box2Message);
 numberBox[2].addEventListener('click', box3Message);
+
+
+//Button hide & show
+var btn = document.querySelector('.hide');
+
+function showBox() {
+    btn.classList.add('show');
+}
+
+for (i = 0; i < numberBox.length; i++) {
+    numberBox[i].addEventListener('click', showBox);
+}
